@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/darkBlue" /> <!-- Replace with your desired background color -->
+    <corners
+        android:bottomLeftRadius="25dp"
+        android:bottomRightRadius="25dp" />
+</shape>

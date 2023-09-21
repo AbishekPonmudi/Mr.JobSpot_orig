@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_weight="1"
+        app:tint="@color/darkBlue"
+        android:src="@drawable/home_icon"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_height="25dp"/>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/share"
+        android:layout_weight="1.2"
+        android:src="@drawable/share_icon"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_height="30dp"/>
+
+
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:id="@+id/add"
+       android:layout_gravity="center"
+       android:backgroundTint="@color/darkBlue"
+       app:tint="@android:color/white"
+       android:layout_width="wrap_content"
+       android:src="@drawable/add_icon"
+       android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/chat"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/work_time"
+        android:layout_width="0dp"
+        android:layout_height="25dp"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/save"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/save_icon"
+        android:layout_width="0dp"
+        android:layout_height="25dp"/>
+
+
+</LinearLayout>

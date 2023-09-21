@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/page_background"
+    android:layout_height="match_parent"
+    tools:context=".Activity.OtpVerfication">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="30sp"
+                android:fontFamily="@font/dm_bold"
+                android:textColor="@color/darkBlue"
+                android:textAlignment="center"
+                android:text="Verification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/hint_text"
+                android:layout_marginTop="11dp"
+                android:text="Secure your account with verification and keep\nyour personal information safe."
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:src="@drawable/mobile_verification"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <LinearLayout
+                android:id="@+id/numberLayout"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/darkBlue"
+                    android:fontFamily="@font/dm_bold"
+                    android:text="Mobile Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:elevation="5dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/number"
+                        android:textSize="12sp"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        android:hint="Enter Mobile Number"
+                        android:fontFamily="@font/dm_regular"
+                        android:background="@color/white"
+                        android:padding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/otpLayout"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/darkBlue"
+                    android:fontFamily="@font/dm_bold"
+                    android:text="OTP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:elevation="5dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/otp"
+                        android:textSize="12sp"
+                        android:hint="Enter Otp"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:fontFamily="@font/dm_regular"
+                        android:background="@color/white"
+                        android:padding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <com.mrprogrammer.Utils.Widgets.ProgressButton
+                android:id="@+id/sentOtp"
+                app:text="Sent Otp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                app:textColor= "@color/white"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
